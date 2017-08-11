@@ -1,13 +1,13 @@
 service: latrova-commits-serverless-py3-tutorial
     
-    provider:
-      name: aws
-      runtime: python3.6
-    
-    functions:
-      posts:
-        handler: handler.posts
-        events:
-          - http:
-              path: blog/posts
-              method: get
+provider:
+  name: aws
+  runtime: python3.6
+
+functions:
+  posts:
+    handler: handler.posts
+    events:
+      - http:
+          path: blog/posts
+          method: get
